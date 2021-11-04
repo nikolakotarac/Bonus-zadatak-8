@@ -3,31 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Rock, Paper, Scissors</title>
-
-    Score Rules You Picked The House Picked You Win You Lose Play Again
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+    <div class="container">
+        <div class="header">
+          <div class="header-content">
+            <div class="header-logo">
+              <img src="/images/logo.svg" class="logo">
+            </div>
+            <div class="header-score">
+              <p>SCORE</p>
+              <span class="score">0</span>
+            </div>
+          </div>
+      </div>
+        <!-- MAIN -->
+        <div class="main">
+            <div class="btn-paper"></div>
+            <div class="btn-scissors"></div>
+            <div class="btn-rock" aria-label="Rock"></div>
+        </div>   
+        <!-- MAIN -->
+        <div class="result">
+          <div class="your-pick">
+            <h2>YOU PICKED</h2>
+          </div>
+          <div class="result-info">
+            <p class="status">YOU WIN</p>
+            <p class="play-again">PLAY AGAIN</p>
+          </div>
+          <div class="house-pick">
+            <h2>THE HOUSE PICKED</h2>
+        </div>      
+    </div>
+    <p class="rules">RULES</p>
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h3>RULES</h3>
+              <div class="up-btn">
+                <img src="./images/icon-close.svg" class="close-btn">
+              </div>      
+           </div>
+           <div class="modal-img">
+            <img src="./images/image-rules.svg" class="rules-img">
+          </div>
+          <div class="down-btn">
+            <img src="./images/icon-close.svg" class="closeMb-btn">
+          </div>
+        </div>       
+      </div>
+    </div>
+   <script src="script.js"></script>
   </body>
 </html>
