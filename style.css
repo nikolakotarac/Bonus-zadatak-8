@@ -174,7 +174,7 @@ body{
     height:415px;
 }
 .modal-content{
-    padding:25px;
+    padding:25px 40px;
     display:flex;
     flex-direction: column;
     gap:40px;
